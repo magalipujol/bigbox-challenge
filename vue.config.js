@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/bigbox-challenge/'
+  publicPath: '/bigbox-challenge/'
 }

@@ -13,7 +13,7 @@ lo demas que quede en otro container -->
       <div class="col">
         <img
           width="563"
-          height="371"
+          height="371" style="border-radius: 15px"
           src="https://static.bigbox.com.ar/uploads/activity/7d70d0e1-50a7-4395-ad5f-ed3a7a723f2f.jpg"
           alt=""
         />
@@ -66,7 +66,7 @@ lo demas que quede en otro container -->
 </template>
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'ActivityDescription',
   props: {
     activity: Object
   }
