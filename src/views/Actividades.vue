@@ -1,11 +1,11 @@
 <template>
-  <div class="d-flex align-content-start flex-wrap">
-    <ActivityCard
-      v-for="(activity, index) in activities"
-      :key="index"
-      :activity="activity"
-    ></ActivityCard>
-  </div>
+  <div class="d-flex flex-wrap">
+      <ActivityCard
+        v-for="(activity, index) in activities"
+        :key="index"
+        :activity="activity"
+      ></ActivityCard>
+    </div>
 </template>
 
 <script>
@@ -37,5 +37,13 @@ export default {
 <style scoped>
 * {
   background-color: #e5e5e5;
+}
+.align-content-start {
+  align-content: center;
+}
+
+.container {
+  padding: 0;
+  align-content: center;
 }
 </style>
