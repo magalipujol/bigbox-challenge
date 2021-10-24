@@ -3,11 +3,9 @@
 lo demas que quede en otro container -->
   <div class="container">
     <div class="container left">
-      <router-link to="/actividades" tag="button">
-        <button type="button" class="btn btn-light btn-back">
+        <button @click="$router.back()" type="button" class="btn btn-light btn-back">
           <span class="material-icons"> arrow_back </span>
         </button>
-      </router-link>
     </div>
     <div class="row">
       <div class="col">
