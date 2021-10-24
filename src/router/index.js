@@ -4,6 +4,10 @@ import Actividades from '../views/Actividades.vue'
 const routes = [
   {
     path: '/',
+    redirect: '/actividades'
+  },
+  {
+    path: '/actividades',
     name: 'actividades',
     component: Actividades
   },
