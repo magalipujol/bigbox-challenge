@@ -9,9 +9,11 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
+            <router-link to="/actividad" style="text-decoration: none; color: inherit;">
             <h5 class="card-title activity-title">
               {{ this.activity?.title }}
             </h5>
+            </router-link>
           </div>
           <div class="col-sm">
             <p class="card-text activity-participants">
