@@ -35,9 +35,6 @@ export default {
 }
 </script>
 <style scoped>
-* {
-  background-color: #e5e5e5;
-}
 .align-content-start {
   align-content: center;
 }

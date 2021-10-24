@@ -45,10 +45,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-* {
-  background-color: #e5e5e5;
-}
-
 .card-title,
 .card-text {
   font-family: Quicksand;
