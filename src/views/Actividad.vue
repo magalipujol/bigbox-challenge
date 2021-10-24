@@ -11,10 +11,11 @@ import SimilarActivities from '@/components/SimilarActivities.vue'
 import BigboxAPIWrapper from '@/components/BigboxAPIWrapper.vue'
 
 export default {
-  name: 'Actividades',
+  name: 'Actividad',
   data () {
     return {
-      activities: []
+      activities: Array,
+      activity: Object
     }
   },
   components: {
@@ -24,6 +25,9 @@ export default {
   async mounted () {
     this.activities = await BigboxAPIWrapper.getActivities(1, 4)
     console.log(this.activities)
+    this.activity = await BigboxAPIWrapper.getActivityByID(this.$route.params.id)
+    console.log('acá')
+    console.log(this.activity?.activity.description)
   }
 }
 </script>

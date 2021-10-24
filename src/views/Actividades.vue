@@ -25,11 +25,6 @@ export default {
   components: {
     ActivityCard
   },
-  methods: {
-    previuosPage () {
-      this.$route.params.page--
-    }
-  },
   async mounted () {
     this.activities = await BigboxAPIWrapper.getActivities(this.$route.params.page, this.$route.params.limit)
     console.log(this.activities)
