@@ -10,6 +10,7 @@
 
 <script>
 import ActivityCard from '@/components/ActivityCard.vue'
+import BigboxAPIWrapper from '@/components/BigboxAPIWrapper.vue'
 
 export default {
   name: 'Actividades',
@@ -22,14 +23,7 @@ export default {
     ActivityCard
   },
   async mounted () {
-    const response = await fetch(
-      'https://json-biglifeapp.herokuapp.com/activity?_page=1&_limit=9'
-    )
-    const data = await response.json()
-    this.activities = await data
-    for (const activity of this.activities) {
-      activity.activity = JSON.parse(activity.activity)
-    }
+    this.activities = await BigboxAPIWrapper.getActivities(1, 9)
     console.log(this.activities)
   }
 }
