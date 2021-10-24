@@ -9,7 +9,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <router-link to="/actividad" style="text-decoration: none; color: inherit;">
+            <router-link :to="'/actividades/' + this.activity?.id" style="text-decoration: none; color: inherit;">
             <h5 class="card-title activity-title">
               {{ this.activity?.title }}
             </h5>
