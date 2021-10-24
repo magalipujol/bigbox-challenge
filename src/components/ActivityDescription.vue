@@ -3,9 +3,11 @@
 lo demas que quede en otro container -->
   <div class="container">
     <div class="container left">
-      <button type="button" class="btn btn-light btn-back">
-        <span class="material-icons"> arrow_back </span>
-      </button>
+      <router-link to="/actividades" tag="button">
+        <button type="button" class="btn btn-light btn-back">
+          <span class="material-icons"> arrow_back </span>
+        </button>
+      </router-link>
     </div>
     <div class="row">
       <div class="col">
@@ -45,9 +47,13 @@ lo demas que quede en otro container -->
           Una hora de juego ilimitado en tus fichines favoritos en Bar el
           Destello, con una cerveza y sándwich a elección
         </p>
-        <p class="fs-5 activity-participants activity-text"> <span class="material-icons-outlined"> person_outline </span> Para 2 personas</p>
-        <p class="fs-5 activity-location activity-text"> <span class="material-icons-outlined place-icon"> place </span
-        >CABA</p>
+        <p class="fs-5 activity-participants activity-text">
+          <span class="material-icons-outlined"> person_outline </span> Para 2
+          personas
+        </p>
+        <p class="fs-5 activity-location activity-text">
+          <span class="material-icons-outlined place-icon"> place </span>CABA
+        </p>
         <p class="fs-5 activity-points activity-text activity-points">
           2990 puntos
         </p>
