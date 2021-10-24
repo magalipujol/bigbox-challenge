@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/">Actividades</router-link> |
-    <router-link to="/actividad">Actividad</router-link>
+    <router-link to="/actividades/136611">Actividad</router-link>
   </div>
   <!-- Cuando cambia la key, el componente se re-renderiza -->
   <router-view :key="$route.fullPath" />
