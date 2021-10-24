@@ -12,24 +12,12 @@ lo demas que quede en otro container -->
         <img
           width="563"
           height="371" style="border-radius: 15px"
-          src="https://static.bigbox.com.ar/uploads/activity/7d70d0e1-50a7-4395-ad5f-ed3a7a723f2f.jpg"
+          :src="this.activity?.activity?.image[0]"
           alt=""
         />
         <p class="fs-1 activity-text activity-subtitle">¿Qué incluye?</p>
         <hr />
-        <ul class="incluido">
-          <li class="fs-5 activity-text activity-light">
-            Un pase libre de 1 hora en Bar el Destello, para jugar a tus
-            fichines retro favoritos.
-          </li>
-          <li class="fs-5 activity-text activity-light">
-            Una cerveza, sidra o vermut y sandwich a elección
-          </li>
-        </ul>
-        <p class="fs-5 activity-text activity-light">
-          Hay 14 arcades y un flipper en sus muebles originales. Para saber si
-          todavía sos tan bueno como crees en el Tetris, o para terminar de una
-          vez por todas el Wonderboy
+        <p v-html="activity?.activity?.benefits" class="fs-5 activity-text activity-light">
         </p>
         <p class="fs-1 activity-text activity-subtitle">
           <span class="material-icons-outlined"> description </span>Reglas:
@@ -42,21 +30,20 @@ lo demas que quede en otro container -->
       </div>
       <div class="col activity-text">
         <p class="fs-1 activity-title activity-text activity-title">
-          1 player Start!
+          {{ this.activity?.title }}
         </p>
         <p class="fs-5 activity-description activity-text">
-          Una hora de juego ilimitado en tus fichines favoritos en Bar el
-          Destello, con una cerveza y sándwich a elección
+          {{ activity?.activity?.description }}
         </p>
         <p class="fs-5 activity-participants activity-text">
-          <span class="material-icons-outlined"> person_outline </span> Para 2
-          personas
+          <span class="material-icons-outlined"> person_outline </span> Para {{ activity?.participants }}
+          persona/s
         </p>
         <p class="fs-5 activity-location activity-text">
-          <span class="material-icons-outlined place-icon"> place </span>CABA
+          <span class="material-icons-outlined place-icon"> place </span> {{ this.activity?.activity?.locations[0].province }}
         </p>
         <p class="fs-5 activity-points activity-text activity-points">
-          2990 puntos
+          {{ this.activity?.points }} puntos
         </p>
       </div>
     </div>
