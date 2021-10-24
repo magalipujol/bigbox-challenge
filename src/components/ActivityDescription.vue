@@ -18,6 +18,7 @@ lo demas que quede en otro container -->
           alt=""
         />
         <p class="fs-1 activity-text activity-subtitle">¿Qué incluye?</p>
+        <hr />
         <ul class="incluido">
           <li class="fs-5 activity-text activity-light">
             Un pase libre de 1 hora en Bar el Destello, para jugar a tus
@@ -32,7 +33,9 @@ lo demas que quede en otro container -->
           todavía sos tan bueno como crees en el Tetris, o para terminar de una
           vez por todas el Wonderboy
         </p>
-        <p class="fs-1 activity-text activity-subtitle">Reglas</p>
+        <p class="fs-1 activity-text activity-subtitle">
+          <span class="material-icons-outlined"> description </span>Reglas:
+        </p>
         <p class="fs-5 activity-text activity-light">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta
           voluptatum sapiente maxime autem animi repellendus eveniet, velit
@@ -96,6 +99,7 @@ export default {
   font-weight: 500;
   line-height: 28px;
   letter-spacing: -1px;
+  margin-top: 40px;
 }
 
 .activity-location {
