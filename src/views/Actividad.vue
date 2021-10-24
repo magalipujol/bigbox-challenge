@@ -8,6 +8,7 @@
 <script>
 import ActivityDescription from '@/components/ActivityDescription.vue'
 import SimilarActivities from '@/components/SimilarActivities.vue'
+import BigboxAPIWrapper from '@/components/BigboxAPIWrapper.vue'
 
 export default {
   name: 'Actividades',
@@ -21,14 +22,7 @@ export default {
     SimilarActivities
   },
   async mounted () {
-    const response = await fetch(
-      'https://json-biglifeapp.herokuapp.com/activity?_page=1&_limit=4'
-    )
-    const data = await response.json()
-    this.activities = await data
-    for (const activity of this.activities) {
-      activity.activity = JSON.parse(activity.activity)
-    }
+    this.activities = await BigboxAPIWrapper.getActivities(1, 4)
     console.log(this.activities)
   }
 }
