@@ -1,5 +1,7 @@
 # bigbox-challenge
 
+https://magalipujol.github.io/bigbox-challenge/actividades
+
 ## Project setup
 ```
 npm install
