@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Actividades from '../views/Actividades.vue'
+import Actividad from '../views/Actividad.vue'
 
 const routes = [
   {
@@ -12,12 +13,13 @@ const routes = [
     component: Actividades
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/actividad',
+    name: 'Actividad',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: Actividad
   }
 ]
 

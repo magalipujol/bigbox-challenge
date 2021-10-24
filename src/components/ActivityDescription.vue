@@ -3,7 +3,7 @@
 lo demas que quede en otro container -->
   <div class="container">
     <div class="container left">
-      <button  type="button" class="btn btn-light btn-back">
+      <button type="button" class="btn btn-light btn-back">
         <span class="material-icons"> arrow_back </span>
       </button>
     </div>
