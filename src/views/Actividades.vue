@@ -6,6 +6,9 @@
         :activity="activity"
       ></ActivityCard>
     </div>
+    <router-link tag="button" :to="'/actividades/page=' + (Number($route.params.page)-1) + '/limit=' + $route.params.limit"><button class="btn btn-primary">prev</button></router-link>
+    <router-link tag="button" :to="'/actividades/page=' + (Number($route.params.page)+1) + '/limit=' + $route.params.limit"><button class="btn btn-primary">next</button></router-link>
+
 </template>
 
 <script>
@@ -22,8 +25,13 @@ export default {
   components: {
     ActivityCard
   },
+  methods: {
+    previuosPage () {
+      this.$route.params.page--
+    }
+  },
   async mounted () {
-    this.activities = await BigboxAPIWrapper.getActivities(1, 9)
+    this.activities = await BigboxAPIWrapper.getActivities(this.$route.params.page, this.$route.params.limit)
     console.log(this.activities)
   }
 }

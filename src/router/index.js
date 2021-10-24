@@ -5,11 +5,11 @@ import Actividad from '../views/Actividad.vue'
 const routes = [
   {
     path: '/',
-    redirect: '/actividades'
+    redirect: '/actividades/page=1/limit=9'
   },
   {
-    path: '/actividades',
-    name: 'actividades',
+    path: '/actividades/page=:page/limit=:limit',
+    name: 'Actividades',
     component: Actividades
   },
   {

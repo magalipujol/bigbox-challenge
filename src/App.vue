@@ -3,7 +3,8 @@
     <router-link to="/">Actividades</router-link> |
     <router-link to="/actividad">Actividad</router-link>
   </div>
-  <router-view/>
+  <!-- Cuando cambia la key, el componente se re-renderiza -->
+  <router-view :key="$route.fullPath" />
 </template>
 
 <style>
