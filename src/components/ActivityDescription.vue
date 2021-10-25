@@ -99,6 +99,12 @@ export default {
   border: none;
   padding: 7px;
   background: none;
+  border-radius: 50%;
+}
+
+.btn-back:hover {
+  background: #FF6C5E;
+    color: #fff;
 }
 
 .left {
