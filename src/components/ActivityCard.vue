@@ -18,9 +18,13 @@
               </h5>
             </div>
             <div class="col-sm">
-              <p class="card-text activity-participants">
+              <p v-if="this.activity?.activity.participants == 1" class="card-text activity-participants">
                 {{ this.activity?.activity.participants }}
                 <span class="material-icons-outlined"> person_outline </span>
+              </p>
+              <p v-else class="card-text activity-participants">
+                {{ this.activity?.activity.participants }}
+                <span class="material-icons-outlined"> people </span>
               </p>
             </div>
           </div>

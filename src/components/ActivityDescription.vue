@@ -13,7 +13,7 @@ lo demas que quede en otro container -->
           width="563"
           height="371" style="border-radius: 15px"
           :src="this.activity?.activity?.image[0]"
-          alt=""
+          alt="imagen de la actividad"
         />
       </div>
       <div class="col activity-text">
@@ -23,9 +23,15 @@ lo demas que quede en otro container -->
         <p class="fs-5 activity-description activity-text">
           {{ activity?.activity?.description }}
         </p>
-        <p class="fs-5 activity-participants activity-text">
-          <span class="material-icons-outlined"> person_outline </span> Para {{ activity?.participants }}
-          persona/s
+        <p v-if="activity?.activity?.participants == 1" class="fs-5 activity-participants activity-text">
+          <span class="material-icons-outlined"> person_outline </span> Para {{ activity?.activity?.participants }}
+          persona
+        </p>
+        <p v-else class="fs-5 activity-participants activity-text">
+          <span class="material-icons-outlined">
+people
+</span> Para {{ activity?.activity?.participants }}
+          personas
         </p>
         <p class="fs-5 activity-location activity-text">
           <span class="material-icons-outlined place-icon"> place </span> {{ this.activity?.activity?.locations[0].province }}
