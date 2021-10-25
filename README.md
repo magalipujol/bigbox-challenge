@@ -1,6 +1,8 @@
-# bigbox-challenge
+# Bigbox Fronted Challenge
 
-https://magalipujol.github.io/bigbox-challenge/actividades
+- Este repositorio es parte de un challenge para Front-End de Bigbox S.A.
+
+- Está deployado con github pages [acá](https://magalipujol.github.io/bigbox-challenge/actividades)
 
 ## Project setup
 ```
@@ -11,7 +13,6 @@ npm install
 ```
 npm run serve
 ```
-
 ### Compiles and minifies for production
 ```
 npm run build
