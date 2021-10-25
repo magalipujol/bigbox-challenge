@@ -92,6 +92,12 @@ export default {
 
 .card {
   padding: 10px;
+  margin: 10px;
   border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 </style>
