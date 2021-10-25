@@ -6,9 +6,12 @@
         :activity="activity"
       ></ActivityCard>
     </div>
-    <router-link tag="button" :to="'/actividades/page=' + (Number($route.params.page)-1) + '/limit=' + $route.params.limit"><button class="btn btn-primary">prev</button></router-link>
-    <router-link tag="button" :to="'/actividades/page=' + (Number($route.params.page)+1) + '/limit=' + $route.params.limit"><button class="btn btn-primary">next</button></router-link>
-
+    <router-link tag="button" :to="'/actividades/page=' + (Number($route.params.page)-1) + '/limit=' + $route.params.limit"><button class="btn btn-primary"><span class="material-icons">
+chevron_left
+</span></button></router-link>
+    <router-link tag="button" :to="'/actividades/page=' + (Number($route.params.page)+1) + '/limit=' + $route.params.limit"><button class="btn btn-primary"><span class="material-icons">
+navigate_next
+</span></button></router-link>
 </template>
 
 <script>
@@ -39,5 +42,17 @@ export default {
 .container {
   padding: 0;
   align-content: center;
+}
+
+.btn-primary {
+  background: #FF6C5E;
+  color: white;
+  border: white solid 2px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.btn-primary:hover {
+  border: #FF6C5E solid 2px;
 }
 </style>
