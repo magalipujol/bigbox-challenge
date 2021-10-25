@@ -6,13 +6,15 @@
 
 ## Tecnologías
 
-- Vue.js
+- **Vue.js**
   Framework de JavaScript para construir páginas web con componentes para encapsular código reutilizable
-- Vue Router
+- **Vue Router**:
   Router oficial de Vue para SPA (Single Page Aplications)
-- Github pages y Github Actions
+- **Github pages** y **Github Actions**:
   Github Actions para deploy automatizado en Github Pages
-- Bootstrap
+- **API Bigbox**:
+  Integración con la [API](https://json-biglifeapp.herokuapp.com/) de Bigbox
+- **Bootstrap**:
   Biblioteca de front-end para crear diseños responsivos
 
 ## Project setup
