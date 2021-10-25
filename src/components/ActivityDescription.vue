@@ -15,18 +15,6 @@ lo demas que quede en otro container -->
           :src="this.activity?.activity?.image[0]"
           alt=""
         />
-        <p class="fs-1 activity-text activity-subtitle">¿Qué incluye?</p>
-        <hr />
-        <p v-html="activity?.activity?.benefits" class="fs-5 activity-text activity-light">
-        </p>
-        <p class="fs-1 activity-text activity-subtitle">
-          <span class="material-icons-outlined"> description </span>Reglas:
-        </p>
-        <p class="fs-5 activity-text activity-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta
-          voluptatum sapiente maxime autem animi repellendus eveniet, velit
-          aperiam, dolorem numquam unde!
-        </p>
       </div>
       <div class="col activity-text">
         <p class="fs-1 activity-title activity-text activity-title">
@@ -44,6 +32,22 @@ lo demas que quede en otro container -->
         </p>
         <p class="fs-5 activity-points activity-text activity-points">
           {{ this.activity?.points }} puntos
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p class="fs-1 activity-text activity-subtitle">¿Qué incluye?</p>
+        <hr />
+        <p v-html="activity?.activity?.benefits" class="fs-5 activity-text activity-light">
+        </p>
+        <p class="fs-1 activity-text activity-subtitle">
+          <span class="material-icons-outlined"> description </span>Reglas:
+        </p>
+        <p class="fs-5 activity-text activity-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta
+          voluptatum sapiente maxime autem animi repellendus eveniet, velit
+          aperiam, dolorem numquam unde!
         </p>
       </div>
     </div>
