@@ -1,39 +1,42 @@
 <template>
   <div class="card" style="width: 18rem">
-    <img
-      class="card-img-top activity-img"
-      :src="this.activity?.activity.image[0]"
-      alt="Card image cap"
-    />
-    <div class="card-body activity-card-body">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <router-link :to="'/actividades/' + this.activity?.id" style="text-decoration: none; color: inherit;">
-            <h5 class="card-title activity-title">
-              {{ this.activity?.title }}
-            </h5>
-            </router-link>
-          </div>
-          <div class="col-sm">
-            <p class="card-text activity-participants">
-              {{ this.activity?.activity.participants }}
-              <span class="material-icons-outlined"> person_outline </span>
-            </p>
+    <router-link
+      :to="'/actividades/' + this.activity?.id"
+      style="text-decoration: none; color: inherit"
+    >
+      <img
+        class="card-img-top activity-img"
+        :src="this.activity?.activity.image[0]"
+        alt="Card image cap"
+      />
+      <div class="card-body activity-card-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h5 class="card-title activity-title">
+                {{ this.activity?.title }}
+              </h5>
+            </div>
+            <div class="col-sm">
+              <p class="card-text activity-participants">
+                {{ this.activity?.activity.participants }}
+                <span class="material-icons-outlined"> person_outline </span>
+              </p>
+            </div>
           </div>
         </div>
+        <p class="card-text activity-location">
+          <span class="material-icons-outlined place-icon"> place </span
+          >{{ this.activity?.activity.locations[0].province }}
+        </p>
+        <p class="card-text activity-description">
+          {{ this.activity?.activity.description }}
+        </p>
+        <p class="card-text activity-points">
+          {{ this.activity?.points }} puntos
+        </p>
       </div>
-      <p class="card-text activity-location">
-        <span class="material-icons-outlined place-icon"> place </span
-        >{{ this.activity?.activity.locations[0].province }}
-      </p>
-      <p class="card-text activity-description">
-        {{ this.activity?.activity.description }}
-      </p>
-      <p class="card-text activity-points">
-        {{ this.activity?.points }} puntos
-      </p>
-    </div>
+    </router-link>
   </div>
 </template>
 <script>
@@ -61,7 +64,8 @@ export default {
   text-align: left;
 }
 
-.card-title, .activity-participants {
+.card-title,
+.activity-participants {
   font-weight: 700;
   size: 18px;
   line-height: 22.5px;
@@ -87,7 +91,7 @@ export default {
 }
 
 .place-icon {
-  color: #FF6C5E;
+  color: #ff6c5e;
 }
 
 .card {
