@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-wrap">
+  <div class="d-flex flex-wrap" style="max:width=50%">
       <ActivityCard
         v-for="(activity, index) in activities"
         :key="index"
@@ -54,5 +54,9 @@ export default {
 
 .btn-primary:hover {
   border: #FF6C5E solid 2px;
+}
+.d-flex {
+  justify-content: center;
+  padding-top: 5%
 }
 </style>
