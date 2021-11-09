@@ -10,6 +10,8 @@
   Framework de JavaScript para construir páginas web con componentes para encapsular código reutilizable
 - **Vue Router**:
   Router oficial de Vue para SPA (Single Page Aplications)
+- **Vue CLI**:
+  CLI oficial de Vue para facilitar el manejo de proyectos Vue.
 - **Github pages** y **Github Actions**:
   Github Actions para deploy automatizado en Github Pages
 - **API Bigbox**:
